@@ -1,0 +1,279 @@
+﻿{
+    "generated_at":  "2026-05-19T00:53:57-03:00",
+    "source":  "C:\\codes\\skills",
+    "regra":  "Auxiliar de descoberta; SKILL.md continua fonte principal.",
+    "skills":  [
+                   {
+                       "name":  "maintain-activities",
+                       "description":  "Criar, atualizar, marcar ou verificar atividades dentro de planos em C:\\codes. Use quando Codex precisar quebrar trabalho em atividades, atualizar status, registrar data de implementacao, validar criterio de aceite, ou impedir execucao de atividade sem escopo, criterio ou skill recomendada.",
+                       "path":  "C:\\codes\\skills\\core\\planner\\maintain-activities",
+                       "skill_file":  "C:\\codes\\skills\\core\\planner\\maintain-activities\\SKILL.md",
+                       "contextos":  [
+                                         "planejamento"
+                                     ]
+                   },
+                   {
+                       "name":  "maintain-planner",
+                       "description":  "Criar, revisar ou validar planos antes de implementacoes persistentes no workspace C:\\codes. Use quando Codex precisar organizar objetivo, escopo, fora de escopo, atividades, dependencias, riscos, skills recomendadas e criterios de aceite; ou quando uma implementacao ainda nao tiver plano claro conforme C:\\codes\\tools\\planejador.",
+                       "path":  "C:\\codes\\skills\\core\\planner\\maintain-planner",
+                       "skill_file":  "C:\\codes\\skills\\core\\planner\\maintain-planner\\SKILL.md",
+                       "contextos":  [
+                                         "planejamento"
+                                     ]
+                   },
+                   {
+                       "name":  "route-skills-by-context",
+                       "description":  "Eleger skills executoras por contexto e tipo de atividade no workspace C:\\codes. Use quando for necessario decidir, antes da execucao, quais skills basicas, de empresa, de projeto e globais de apoio devem ser acionadas, mantendo coerencia com root, ferramentas globais e compatibilidade Gemini/Codex.",
+                       "path":  "C:\\codes\\skills\\core\\router\\route-skills-by-context",
+                       "skill_file":  "C:\\codes\\skills\\core\\router\\route-skills-by-context\\SKILL.md",
+                       "contextos":  [
+                                         "root",
+                                         "skills",
+                                         "planejamento"
+                                     ]
+                   },
+                   {
+                       "name":  "maintain-skills",
+                       "description":  "Manter skills locais do workspace C:\\codes somente quando o usuario solicitar explicitamente. Use para criar, revisar, mover, organizar ou validar skills em C:\\codes\\skills; processar sessoes pendentes relacionadas a manutencao de skills; mover sessoes concluidas para feitas; garantir que C:\\Users mantenha somente a ponte global minima; ou coordenar `maintain-automations` quando atividades repetitivas puderem virar scripts, templates, assets ou referencias parametrizadas.",
+                       "path":  "C:\\codes\\skills\\core\\skill_registry\\maintain-skills",
+                       "skill_file":  "C:\\codes\\skills\\core\\skill_registry\\maintain-skills\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
+                       "name":  "periodic-skills-reviewer",
+                       "description":  "Executar revisoes periodicas de skills para detectar sobreposicao de proposito, falhas de dependencia e gaps de qualidade.",
+                       "path":  "C:\\codes\\skills\\core\\validator\\periodic-skills-reviewer",
+                       "skill_file":  "C:\\codes\\skills\\core\\validator\\periodic-skills-reviewer\\SKILL.md",
+                       "contextos":  [
+                                         "skills",
+                                         "planejamento"
+                                     ]
+                   },
+                   {
+                       "name":  "excel-validation-specialist",
+                       "description":  "Apoiar leitura tecnica de planilhas Excel para reconciliacao com SQL, mapeando colunas/linhas, divergencias de valor e criterios de validacao para investigacao e correcao de queries analiticas.",
+                       "path":  "C:\\codes\\skills\\domains\\languages\\excel-validation-specialist",
+                       "skill_file":  "C:\\codes\\skills\\domains\\languages\\excel-validation-specialist\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
+                       "name":  "powershell-specialist",
+                       "description":  "Especialista em PowerShell para criar, revisar e manter scripts no workspace C:\\codes com foco em robustez, parametrizacao e reaproveitamento.",
+                       "path":  "C:\\codes\\skills\\domains\\languages\\powershell-specialist",
+                       "skill_file":  "C:\\codes\\skills\\domains\\languages\\powershell-specialist\\SKILL.md",
+                       "contextos":  [
+                                         "skills",
+                                         "automacoes"
+                                     ]
+                   },
+                   {
+                       "name":  "python-specialist",
+                       "description":  "Especialista em Python para criar, revisar e manter scripts no workspace C:\\codes com foco em qualidade, parametros e reutilizacao.",
+                       "path":  "C:\\codes\\skills\\domains\\languages\\python-specialist",
+                       "skill_file":  "C:\\codes\\skills\\domains\\languages\\python-specialist\\SKILL.md",
+                       "contextos":  [
+                                         "skills",
+                                         "automacoes"
+                                     ]
+                   },
+                   {
+                       "name":  "redshift-sql-specialist",
+                       "description":  "Investigar, diagnosticar e orientar correcoes SQL em Amazon Redshift com foco em views analiticas, regras percentuais, cast/conversao numerica, joins e validacao de resultados por amostra de negocio.",
+                       "path":  "C:\\codes\\skills\\domains\\languages\\redshift-sql-specialist",
+                       "skill_file":  "C:\\codes\\skills\\domains\\languages\\redshift-sql-specialist\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
+                       "name":  "architecture-diagrammer",
+                       "description":  "Modelar e revisar diagramas de arquitetura tecnica com consistencia entre componentes, fluxos e fronteiras de sistema.",
+                       "path":  "C:\\codes\\skills\\domains\\products\\architecture-diagrammer",
+                       "skill_file":  "C:\\codes\\skills\\domains\\products\\architecture-diagrammer\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
+                       "name":  "presentation-designer",
+                       "description":  "Criar apresentacoes HTML tecnicas e executivas com foco visual, hierarquia de mensagem e fluxo por slide.",
+                       "path":  "C:\\codes\\skills\\domains\\products\\presentation-designer",
+                       "skill_file":  "C:\\codes\\skills\\domains\\products\\presentation-designer\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
+                       "name":  "technical-writer",
+                       "description":  "Criar e revisar documentacao tecnica em Markdown com estrutura profissional, diagramas Mermaid validos e linguagem objetiva.",
+                       "path":  "C:\\codes\\skills\\domains\\products\\technical-writer",
+                       "skill_file":  "C:\\codes\\skills\\domains\\products\\technical-writer\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
+                       "name":  "ui-infographic-generator",
+                       "description":  "Criar infograficos tecnicos e executivos para resumo de processos, KPIs, comparativos e timelines.",
+                       "path":  "C:\\codes\\skills\\domains\\products\\ui-infographic-generator",
+                       "skill_file":  "C:\\codes\\skills\\domains\\products\\ui-infographic-generator\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
+                       "name":  "visual-storytelling",
+                       "description":  "Transformar conteudo tecnico em narrativa visual com fluxo cognitivo claro para publico tecnico e executivo.",
+                       "path":  "C:\\codes\\skills\\domains\\products\\visual-storytelling",
+                       "skill_file":  "C:\\codes\\skills\\domains\\products\\visual-storytelling\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
+                       "name":  "cloudinformation-aws",
+                       "description":  "Skill de apoio para consulta de informacoes AWS em modo somente leitura. Usar quando for necessario inventariar conta, regiao, recursos e configuracoes para diagnostico, planejamento ou validacao previa, sem executar alteracoes em infraestrutura, dados ou deploy.",
+                       "path":  "C:\\codes\\skills\\domains\\services\\cloudinformation-aws",
+                       "skill_file":  "C:\\codes\\skills\\domains\\services\\cloudinformation-aws\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
+                       "name":  "syg-cloudformation-aws",
+                       "description":  "Padrao SYG para parametrizacao e validacao de CloudFormation em projetos de dados. Usar quando criar, revisar ou comparar templates `cloudformation.yml` e arquivos `parameters/*.json`, quando houver mudancas de ambiente (DEV/TEST/PROD), ou quando for necessario validar nao regressao de parametros de jobs/triggers/conexoes antes de deploy.",
+                       "path":  "C:\\codes\\skills\\domains\\services\\syg-cloudformation-aws",
+                       "skill_file":  "C:\\codes\\skills\\domains\\services\\syg-cloudformation-aws\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
+                       "name":  "syg-rebates-parameterization",
+                       "description":  "Governanca SYG para parametrizacao do projeto rebates com foco em contrato CSV, versao de parametros e transicao retrocompativel. Usar quando criar, revisar ou evoluir regras de `meta_safra`, `super_safra` e `pfp`, quando houver mudanca de layout de arquivo, ou quando for necessario acionar validacao tecnica antes da carga.",
+                       "path":  "C:\\codes\\skills\\domains\\services\\syg-rebates-parameterization",
+                       "skill_file":  "C:\\codes\\skills\\domains\\services\\syg-rebates-parameterization\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
+                       "name":  "syg-unit-test-specialist",
+                       "description":  "Especialista em testes unitarios Python para projetos da empresa SYG (especialmente Glue jobs, validadores e modulos de workflow). Usar quando criar, revisar, ampliar ou padronizar testes em pastas `tests/` ou `test/`, quando houver necessidade de mock de dependencias AWS/awsglue/lib, quando for preciso reduzir regressao com cobertura de cenarios de erro e sucesso, ou quando for integrar execucao de pytest ao fluxo do repositorio.",
+                       "path":  "C:\\codes\\skills\\domains\\services\\syg-unit-test-specialist",
+                       "skill_file":  "C:\\codes\\skills\\domains\\services\\syg-unit-test-specialist\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
+                       "name":  "syg-workflows-user-zone",
+                       "description":  "Padrao SYG para naming, cascata e transicao de workflows/jobs na camada user_zone. Usar quando criar, revisar ou migrar nome de jobs e encadeamentos (A0/A1/B1...), quando for necessario mapear estado atual para estado alvo sem quebra, ou quando houver ajuste de orquestracao entre ingestao e carga.",
+                       "path":  "C:\\codes\\skills\\domains\\services\\syg-workflows-user-zone",
+                       "skill_file":  "C:\\codes\\skills\\domains\\services\\syg-workflows-user-zone\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
+                       "name":  "configure-machine-default-skill",
+                       "description":  "Criar, corrigir ou validar a skill ponte global usar-codes-agents no diretorio padrao do Codex para apontar somente para C:\\codes\\AGENTS.md.",
+                       "path":  "C:\\codes\\skills\\domains\\tools\\configure-machine-default-skill",
+                       "skill_file":  "C:\\codes\\skills\\domains\\tools\\configure-machine-default-skill\\SKILL.md",
+                       "contextos":  [
+                                         "root",
+                                         "skills"
+                                     ]
+                   },
+                   {
+                       "name":  "connect-github-gitlab",
+                       "description":  "Recuperar conectividade Git com GitHub/GitLab no Windows usando scripts parametrizaveis. Use quando houver erro de autenticacao SSH/HTTPS, falha de ssh-agent, chave ausente, ou bloqueio de push/pull por conexao.",
+                       "path":  "C:\\codes\\skills\\domains\\tools\\connect-github-gitlab",
+                       "skill_file":  "C:\\codes\\skills\\domains\\tools\\connect-github-gitlab\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
+                       "name":  "connect-secondary-machine-git",
+                       "description":  "Configurar conectividade Git em segunda maquina Windows reaproveitando chave SSH padrao de forma segura e parametrizavel. Use quando a segunda maquina nao consegue autenticar no GitHub/GitLab.",
+                       "path":  "C:\\codes\\skills\\domains\\tools\\connect-secondary-machine-git",
+                       "skill_file":  "C:\\codes\\skills\\domains\\tools\\connect-secondary-machine-git\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
+                       "name":  "maintain-agents",
+                       "description":  "Revisar, criar ou atualizar arquivos AGENTS.md do workspace C:\\codes somente quando o usuario solicitar explicitamente. Use para alterar regras persistentes, alinhar instrucoes entre raiz, controle de chamados e skills, numerar regras, remover contradicoes, ou garantir que AGENTS.md aponte para C:\\codes\\skills e para o controle de chamados.",
+                       "path":  "C:\\codes\\skills\\domains\\tools\\maintain-agents",
+                       "skill_file":  "C:\\codes\\skills\\domains\\tools\\maintain-agents\\SKILL.md",
+                       "contextos":  [
+                                         "root",
+                                         "agents"
+                                     ]
+                   },
+                   {
+                       "name":  "maintain-filesystem",
+                       "description":  "Manter regras de pastas, arquivos e repositorios do workspace C:\\codes. Use quando Codex precisar revisar root, file_system, regras_file_system, estrutura de empresas, .gitignore da raiz, personalizado.md, template.personalizado.md, ou organizacao de repositorios em C:\\codes.",
+                       "path":  "C:\\codes\\skills\\domains\\tools\\maintain-filesystem",
+                       "skill_file":  "C:\\codes\\skills\\domains\\tools\\maintain-filesystem\\SKILL.md",
+                       "contextos":  [
+                                         "root",
+                                         "file_system"
+                                     ]
+                   },
+                   {
+                       "name":  "maintain-git",
+                       "description":  "Preparar ou executar operacoes Git seguras no workspace C:\\codes. Use para criar repositorio local e no GitHub quando solicitado, sugerir ou criar branch, preparar mensagem de commit, executar commit ou sincronizar repositorio, seguindo C:\\codes\\tools\\git e exigindo plano/atividade para operacoes persistentes.",
+                       "path":  "C:\\codes\\skills\\domains\\tools\\maintain-git",
+                       "skill_file":  "C:\\codes\\skills\\domains\\tools\\maintain-git\\SKILL.md",
+                       "contextos":  [
+                                         "git"
+                                     ]
+                   },
+                   {
+                       "name":  "maintain-tickets",
+                       "description":  "Manutencao minima de chamado no workspace C:\\codes. Use somente quando o chamado atual nao estiver objetivo e claro, ou quando Codex precisar criar, localizar, validar ou corrigir o chamado ativo no formato EMPRESA-USUARIO-CH-ANO-NNNNN.",
+                       "path":  "C:\\codes\\skills\\domains\\tools\\maintain-tickets",
+                       "skill_file":  "C:\\codes\\skills\\domains\\tools\\maintain-tickets\\SKILL.md",
+                       "contextos":  [
+                                         "ctrl_chamados",
+                                         "chamados"
+                                     ]
+                   },
+                   {
+                       "name":  "register-ticket-session",
+                       "description":  "Criar referencia inicial de sessao pendente no workspace C:\\codes. Use somente no inicio de um trabalho com chamado ativo para criar chamados/{empresa}/{usuario}/{ano}/{sequencial}/sessoes/pendentes/NNN.md; ao concluir, a skill solicitada para a atividade deve mover a sessao para sessoes/feitas/NNN.md.",
+                       "path":  "C:\\codes\\skills\\domains\\tools\\register-ticket-session",
+                       "skill_file":  "C:\\codes\\skills\\domains\\tools\\register-ticket-session\\SKILL.md",
+                       "contextos":  [
+                                         "ctrl_chamados",
+                                         "chamados"
+                                     ]
+                   },
+                   {
+                       "name":  "maintain-automations",
+                       "description":  "Criar, revisar ou melhorar automacoes parametrizadas em C:\\codes\\skills. Use quando uma atividade se repete mudando apenas parametros, quando um fluxo manual ficar longo, sensivel a erro ou reutilizavel, ou quando Codex precisar transformar pratica recorrente em script, template ou asset dentro da skill dona da atividade.",
+                       "path":  "C:\\codes\\skills\\generators\\skill_generator\\maintain-automations",
+                       "skill_file":  "C:\\codes\\skills\\generators\\skill_generator\\maintain-automations\\SKILL.md",
+                       "contextos":  [
+                                         "skills",
+                                         "automacoes"
+                                     ]
+                   },
+                   {
+                       "name":  "sync-repositories-index",
+                       "description":  "Atualizar e validar o indice de repositorios do root em C:\\codes. Use quando houver novo projeto/empresa, divergencia entre estado local e indice, ou necessidade de regenerar C:\\codes\\indice-repositorios-root.json e C:\\codes\\indice-repositorios-root.md.",
+                       "path":  "C:\\codes\\skills\\synchronizers\\registry_sync\\sync-repositories-index",
+                       "skill_file":  "C:\\codes\\skills\\synchronizers\\registry_sync\\sync-repositories-index\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   }
+               ]
+}

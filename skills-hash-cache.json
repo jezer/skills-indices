@@ -1,0 +1,151 @@
+﻿{
+    "generated_at":  "2026-05-19T00:20:07",
+    "total":  29,
+    "items":  [
+                  {
+                      "skill":  "maintain-activities",
+                      "file":  "C:\\codes\\skills\\core\\planner\\maintain-activities\\SKILL.md",
+                      "hash":  "103b57d4ea27b9f6ba8a122c5088f01f1a394a701f2ad06420f44432925521ff"
+                  },
+                  {
+                      "skill":  "maintain-planner",
+                      "file":  "C:\\codes\\skills\\core\\planner\\maintain-planner\\SKILL.md",
+                      "hash":  "9480edc687fe3d26dbd9365528ebef24cac5cc083b099987a394beb8fff214d2"
+                  },
+                  {
+                      "skill":  "route-skills-by-context",
+                      "file":  "C:\\codes\\skills\\core\\router\\route-skills-by-context\\SKILL.md",
+                      "hash":  "a772a14234b4079ed6b9ca9e498eca67e93af2d87e67b8f0950c5b6b37f47713"
+                  },
+                  {
+                      "skill":  "maintain-skills",
+                      "file":  "C:\\codes\\skills\\core\\skill_registry\\maintain-skills\\SKILL.md",
+                      "hash":  "8ad0dbbe82f649701b51a92c360e3bc28c9119f517cf9383e586cc82de05edf2"
+                  },
+                  {
+                      "skill":  "periodic-skills-reviewer",
+                      "file":  "C:\\codes\\skills\\core\\validator\\periodic-skills-reviewer\\SKILL.md",
+                      "hash":  "b3748c50ca21538bd0592824a707362d95316cee5dd48889d05c452cf747b80b"
+                  },
+                  {
+                      "skill":  "excel-validation-specialist",
+                      "file":  "C:\\codes\\skills\\domains\\languages\\excel-validation-specialist\\SKILL.md",
+                      "hash":  "ed3741cdb12b0f9a361269b47648b418b4d736361bbc92fadac15a118e8eea03"
+                  },
+                  {
+                      "skill":  "powershell-specialist",
+                      "file":  "C:\\codes\\skills\\domains\\languages\\powershell-specialist\\SKILL.md",
+                      "hash":  "1af1c517d3f4cfe8f653e7a33378d4e3d65a4400960df2bf988ad956de00caf4"
+                  },
+                  {
+                      "skill":  "python-specialist",
+                      "file":  "C:\\codes\\skills\\domains\\languages\\python-specialist\\SKILL.md",
+                      "hash":  "29119a7c8d1f15fac081e2bb308525ff33864c8ba110c749cb6ec2d97d936589"
+                  },
+                  {
+                      "skill":  "redshift-sql-specialist",
+                      "file":  "C:\\codes\\skills\\domains\\languages\\redshift-sql-specialist\\SKILL.md",
+                      "hash":  "0606e705a1f9bdcf7ea7824e3a64dec9160fa8e35fb158c035aa79deaba6cd62"
+                  },
+                  {
+                      "skill":  "architecture-diagrammer",
+                      "file":  "C:\\codes\\skills\\domains\\products\\architecture-diagrammer\\SKILL.md",
+                      "hash":  "ef62270367b2f885d9a511f0e88e7edc4499a69bf391bfc2699be9622ec0ecfe"
+                  },
+                  {
+                      "skill":  "presentation-designer",
+                      "file":  "C:\\codes\\skills\\domains\\products\\presentation-designer\\SKILL.md",
+                      "hash":  "0ddffef9b3da51360057f519ea4a87977d520bd872be1fd451a5c9cfb2b2f557"
+                  },
+                  {
+                      "skill":  "technical-writer",
+                      "file":  "C:\\codes\\skills\\domains\\products\\technical-writer\\SKILL.md",
+                      "hash":  "d761ce599b2dc69d435f2324aba5d1ad563ba72b752db193bb714d2227693f46"
+                  },
+                  {
+                      "skill":  "ui-infographic-generator",
+                      "file":  "C:\\codes\\skills\\domains\\products\\ui-infographic-generator\\SKILL.md",
+                      "hash":  "a19bb1332c5c8aad4b9c950b0a71ff935db0c557f3485dcc8d4c03c088d7211e"
+                  },
+                  {
+                      "skill":  "visual-storytelling",
+                      "file":  "C:\\codes\\skills\\domains\\products\\visual-storytelling\\SKILL.md",
+                      "hash":  "df4608e4daafb6763781b5ff370c6d7dca5e9f03e50e6d5d18fc1cd39176bf0a"
+                  },
+                  {
+                      "skill":  "cloudinformation-aws",
+                      "file":  "C:\\codes\\skills\\domains\\services\\cloudinformation-aws\\SKILL.md",
+                      "hash":  "506487899c6acdfcbd875d5db8bfb8c14b094bcb2e94292e0edbdd02195d581e"
+                  },
+                  {
+                      "skill":  "syg-cloudformation-aws",
+                      "file":  "C:\\codes\\skills\\domains\\services\\syg-cloudformation-aws\\SKILL.md",
+                      "hash":  "8c25d241d182ac782b91b1627008451aaf57534b2fa2f8465cf833717e8dd69d"
+                  },
+                  {
+                      "skill":  "syg-rebates-parameterization",
+                      "file":  "C:\\codes\\skills\\domains\\services\\syg-rebates-parameterization\\SKILL.md",
+                      "hash":  "229810e3e2d3b4f12deb59053b640b33182de55b77869db4a0ff07c1bc4f03f9"
+                  },
+                  {
+                      "skill":  "syg-unit-test-specialist",
+                      "file":  "C:\\codes\\skills\\domains\\services\\syg-unit-test-specialist\\SKILL.md",
+                      "hash":  "a420be4aa01aa26fb17e6d8dca75031983d47d7b97ff0442140f5862b053a649"
+                  },
+                  {
+                      "skill":  "syg-workflows-user-zone",
+                      "file":  "C:\\codes\\skills\\domains\\services\\syg-workflows-user-zone\\SKILL.md",
+                      "hash":  "2365c95f715df4d62550fbbd19c6fed89ba6e0daf2ce2433e3f455ce077b3819"
+                  },
+                  {
+                      "skill":  "configure-machine-default-skill",
+                      "file":  "C:\\codes\\skills\\domains\\tools\\configure-machine-default-skill\\SKILL.md",
+                      "hash":  "d8090a6bf3a7b013a26021aef3c22a4a4e00ea04306f69a3bfcf8a4936358369"
+                  },
+                  {
+                      "skill":  "connect-github-gitlab",
+                      "file":  "C:\\codes\\skills\\domains\\tools\\connect-github-gitlab\\SKILL.md",
+                      "hash":  "83baaab0ed13872c4e4251d20ad340c09863423a7cfaf606c810c735a232f785"
+                  },
+                  {
+                      "skill":  "connect-secondary-machine-git",
+                      "file":  "C:\\codes\\skills\\domains\\tools\\connect-secondary-machine-git\\SKILL.md",
+                      "hash":  "6d006bc70ca84d58f1722a078f2bbd7af052a2f3e2a2976c313fa59cbae48717"
+                  },
+                  {
+                      "skill":  "maintain-agents",
+                      "file":  "C:\\codes\\skills\\domains\\tools\\maintain-agents\\SKILL.md",
+                      "hash":  "3b395ffa98bab14058ac5b14c6b17378a5af314ab4c425f33eff9ac6695a5ca9"
+                  },
+                  {
+                      "skill":  "maintain-filesystem",
+                      "file":  "C:\\codes\\skills\\domains\\tools\\maintain-filesystem\\SKILL.md",
+                      "hash":  "a1c27e821ac762a243a9e5845829afc33c5d2faf45d548f568c393697a1aa3ff"
+                  },
+                  {
+                      "skill":  "maintain-git",
+                      "file":  "C:\\codes\\skills\\domains\\tools\\maintain-git\\SKILL.md",
+                      "hash":  "dfde9e1f6cc17be17502c389977edcfef7764837e68d75aff3286d576cbd4076"
+                  },
+                  {
+                      "skill":  "maintain-tickets",
+                      "file":  "C:\\codes\\skills\\domains\\tools\\maintain-tickets\\SKILL.md",
+                      "hash":  "b4e17fd30df6f8403cd55a07a3eab2269a065cf9cbfaa76bd63c744eb2ea8807"
+                  },
+                  {
+                      "skill":  "register-ticket-session",
+                      "file":  "C:\\codes\\skills\\domains\\tools\\register-ticket-session\\SKILL.md",
+                      "hash":  "00be3b87abcbce93dc846fc20ec312ef4bb711ff87f87b85f2a8acc2ea6068f1"
+                  },
+                  {
+                      "skill":  "maintain-automations",
+                      "file":  "C:\\codes\\skills\\generators\\skill_generator\\maintain-automations\\SKILL.md",
+                      "hash":  "69da4ad7ae5d8e91f4fdfe0cff919d8f3d6a135a227373a3fad3c0da3001fab2"
+                  },
+                  {
+                      "skill":  "sync-repositories-index",
+                      "file":  "C:\\codes\\skills\\synchronizers\\registry_sync\\sync-repositories-index\\SKILL.md",
+                      "hash":  "0560d619d080e39c1ca9e38f50eb201505c4876404572b976abd8329a1a7dc23"
+                  }
+              ]
+}

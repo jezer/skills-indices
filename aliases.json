@@ -1,0 +1,49 @@
+﻿{
+    "generated_at":  "2026-05-19T00:53:57-03:00",
+    "regra":  "Aliases auxiliares para descoberta; nao substituem AGENTS.md.",
+    "aliases":  {
+                    "atividades":  [
+                                       "maintain-activities"
+                                   ],
+                    "automacoes":  [
+                                       "maintain-automations"
+                                   ],
+                    "ctrl_chamados":  [
+                                          "maintain-tickets",
+                                          "register-ticket-session"
+                                      ],
+                    "regras_file_system":  [
+                                               "maintain-filesystem"
+                                           ],
+                    "file_system":  [
+                                        "maintain-filesystem"
+                                    ],
+                    "skills":  [
+                                   "maintain-skills"
+                               ],
+                    "planejamento":  [
+                                         "maintain-planner",
+                                         "maintain-activities"
+                                     ],
+                    "git":  [
+                                "maintain-git"
+                            ],
+                    "agents":  [
+                                   "maintain-agents"
+                               ],
+                    "root":  [
+                                 "maintain-agents",
+                                 "maintain-filesystem"
+                             ],
+                    "planos":  [
+                                   "maintain-planner"
+                               ],
+                    "roteamento_skills":  [
+                                              "route-skills-by-context"
+                                          ],
+                    "chamados":  [
+                                     "maintain-tickets",
+                                     "register-ticket-session"
+                                 ]
+                }
+}

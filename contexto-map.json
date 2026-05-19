@@ -1,0 +1,64 @@
+﻿{
+    "generated_at":  "2026-05-19T00:53:57-03:00",
+    "regra":  "Mapa auxiliar de contexto para skills; consultar regras especificas antes de agir.",
+    "contextos":  {
+                      "file_system":  {
+                                          "skills":  [
+                                                         "maintain-filesystem"
+                                                     ],
+                                          "regra":  "C:\\codes\\pv\\regras_file_system"
+                                      },
+                      "skills":  {
+                                     "skills":  [
+                                                    "maintain-skills",
+                                                    "maintain-automations"
+                                                ],
+                                     "regra":  "C:\\codes\\skills\\AGENTS.md"
+                                 },
+                      "root":  {
+                                   "skills":  [
+                                                  "maintain-agents",
+                                                  "maintain-filesystem"
+                                              ],
+                                   "regra":  "C:\\codes\\AGENTS.md"
+                               },
+                      "agents":  {
+                                     "skills":  [
+                                                    "maintain-agents"
+                                                ],
+                                     "regra":  "C:\\codes\\AGENTS.md"
+                                 },
+                      "automacoes":  {
+                                         "skills":  [
+                                                        "maintain-automations"
+                                                    ],
+                                         "regra":  "C:\\codes\\skills\\AGENTS.md"
+                                     },
+                      "ctrl_chamados":  {
+                                            "skills":  [
+                                                           "maintain-tickets",
+                                                           "register-ticket-session"
+                                                       ],
+                                            "regra":  "C:\\codes\\tools\\chamados\\AGENTS.md"
+                                        },
+                      "planejamento":  {
+                                           "skills":  [
+                                                          "maintain-planner",
+                                                          "maintain-activities"
+                                                      ],
+                                           "regra":  "C:\\codes\\tools\\planejador\\AGENTS.md"
+                                       },
+                      "roteamento":  {
+                                         "skills":  [
+                                                        "route-skills-by-context"
+                                                    ],
+                                         "regra":  "C:\\codes\\plan\\root-hierarquia-contextos-responsabilidades-skills\\README.md"
+                                     },
+                      "git":  {
+                                  "skills":  [
+                                                 "maintain-git"
+                                             ],
+                                  "regra":  "C:\\codes\\tools\\git\\AGENTS.md"
+                              }
+                  }
+}
