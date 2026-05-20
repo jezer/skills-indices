@@ -1,5 +1,5 @@
 ﻿{
-    "generated_at":  "2026-05-19T00:53:57-03:00",
+    "generated_at":  "2026-05-19T21:58:25-03:00",
     "regra":  "Mapa auxiliar de contexto para skills; consultar regras especificas antes de agir.",
     "contextos":  {
                       "file_system":  {
