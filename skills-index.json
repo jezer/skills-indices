@@ -1,5 +1,5 @@
 ﻿{
-    "generated_at":  "2026-05-19T21:58:25-03:00",
+    "generated_at":  "2026-05-24T10:31:37-03:00",
     "source":  "C:\\codes\\skills",
     "regra":  "Auxiliar de descoberta; SKILL.md continua fonte principal.",
     "skills":  [
@@ -108,6 +108,24 @@
                                      ]
                    },
                    {
+                       "name":  "semaforo-cabecalho",
+                       "description":  "Gerencia o framework Semaforo v3 â€” atualizar codigo-fonte, regenerar parquet e versionar/deployar o cabecalho Delta no Databricks. Delega a geracao do parquet para `code-parquet-builder` via `config/semaforo.json`. Use quando alterar libs do framework, criar nova versao, resolver colisao de ordens ou orientar o fluxo de deploy local para Volumes, tabela Delta e loader.",
+                       "path":  "C:\\codes\\skills\\domains\\products\\semaforo-cabecalho",
+                       "skill_file":  "C:\\codes\\skills\\domains\\products\\semaforo-cabecalho\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
+                       "name":  "semaforo-container-partner-pattern",
+                       "description":  "Define o padrao de estrutura para implantar o cabecalho Semaforo em containers de projeto (especialmente CNU), com pastas x.semaforo_cabecalho, x.scripts e x.parameters e uso de %run relativo.",
+                       "path":  "C:\\codes\\skills\\domains\\products\\semaforo-container-partner-pattern",
+                       "skill_file":  "C:\\codes\\skills\\domains\\products\\semaforo-container-partner-pattern\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
                        "name":  "technical-writer",
                        "description":  "Criar e revisar documentacao tecnica em Markdown com estrutura profissional, diagramas Mermaid validos e linguagem objetiva.",
                        "path":  "C:\\codes\\skills\\domains\\products\\technical-writer",
@@ -144,6 +162,15 @@
                                      ]
                    },
                    {
+                       "name":  "databricks-notebook-pattern",
+                       "description":  "Cria e revisa notebooks Databricks seguindo a arquitetura padrao do ambiente â€” cabecalho Semaforo, declaracao de dependencias, padroes de carga incremental (MERGE) e full (INSERT), finalizacao com lib_normalizar. Usar sempre que criar um notebook novo ou revisar conformidade de existente com o padrao da plataforma.",
+                       "path":  "C:\\codes\\skills\\domains\\services\\databricks-notebook-pattern",
+                       "skill_file":  "C:\\codes\\skills\\domains\\services\\databricks-notebook-pattern\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
                        "name":  "syg-cloudformation-aws",
                        "description":  "Padrao SYG para parametrizacao e validacao de CloudFormation em projetos de dados. Usar quando criar, revisar ou comparar templates `cloudformation.yml` e arquivos `parameters/*.json`, quando houver mudancas de ambiente (DEV/TEST/PROD), ou quando for necessario validar nao regressao de parametros de jobs/triggers/conexoes antes de deploy.",
                        "path":  "C:\\codes\\skills\\domains\\services\\syg-cloudformation-aws",
@@ -162,6 +189,15 @@
                                      ]
                    },
                    {
+                       "name":  "syg-sonarcloud-specialist",
+                       "description":  "Especialista em Quality Gate SonarCloud para projetos SYG. Usar quando houver falhas de cobertura, code smells, bugs, hotspots ou recomendacoes de padrao (ex.: SparkSession com master e appName), priorizando ajustes sem regressao.",
+                       "path":  "C:\\codes\\skills\\domains\\services\\syg-sonarcloud-specialist",
+                       "skill_file":  "C:\\codes\\skills\\domains\\services\\syg-sonarcloud-specialist\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
                        "name":  "syg-unit-test-specialist",
                        "description":  "Especialista em testes unitarios Python para projetos da empresa SYG (especialmente Glue jobs, validadores e modulos de workflow). Usar quando criar, revisar, ampliar ou padronizar testes em pastas `tests/` ou `test/`, quando houver necessidade de mock de dependencias AWS/awsglue/lib, quando for preciso reduzir regressao com cobertura de cenarios de erro e sucesso, ou quando for integrar execucao de pytest ao fluxo do repositorio.",
                        "path":  "C:\\codes\\skills\\domains\\services\\syg-unit-test-specialist",
@@ -175,6 +211,24 @@
                        "description":  "Padrao SYG para naming, cascata e transicao de workflows/jobs na camada user_zone. Usar quando criar, revisar ou migrar nome de jobs e encadeamentos (A0/A1/B1...), quando for necessario mapear estado atual para estado alvo sem quebra, ou quando houver ajuste de orquestracao entre ingestao e carga.",
                        "path":  "C:\\codes\\skills\\domains\\services\\syg-workflows-user-zone",
                        "skill_file":  "C:\\codes\\skills\\domains\\services\\syg-workflows-user-zone\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
+                       "name":  "audit-card-pix-interest",
+                       "description":  "Auditar faturas e extratos de cartao com foco em PIX, juros, IOF, mora e multa, gerando evidencias por arquivo para detectar possiveis cobrancas indevidas.",
+                       "path":  "C:\\codes\\skills\\domains\\tools\\audit-card-pix-interest",
+                       "skill_file":  "C:\\codes\\skills\\domains\\tools\\audit-card-pix-interest\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
+                       "name":  "build-bank-dispute-dossier",
+                       "description":  "Montar dossie tecnico e textos formais de contestacao para banco, Procon e Bacen com base em evidencias de auditoria financeira.",
+                       "path":  "C:\\codes\\skills\\domains\\tools\\build-bank-dispute-dossier",
+                       "skill_file":  "C:\\codes\\skills\\domains\\tools\\build-bank-dispute-dossier\\SKILL.md",
                        "contextos":  [
                                          "skills"
                                      ]
@@ -257,6 +311,15 @@
                                      ]
                    },
                    {
+                       "name":  "code-parquet-builder",
+                       "description":  "Extrai blocos AST (imports topo + cada def/class top-level) de arquivos Python listados em um JSON de configuracao e gera parquet+csv ordenado para carga em tabela Delta. Use quando precisar transformar um conjunto de arquivos .py em um artefato versionado de blocos de codigo executavel via exec() no Databricks, com filtragem automatica de imports relativos e absolutos do proprio framework.",
+                       "path":  "C:\\codes\\skills\\generators\\code-parquet-builder",
+                       "skill_file":  "C:\\codes\\skills\\generators\\code-parquet-builder\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
                        "name":  "maintain-automations",
                        "description":  "Criar, revisar ou melhorar automacoes parametrizadas em C:\\codes\\skills. Use quando uma atividade se repete mudando apenas parametros, quando um fluxo manual ficar longo, sensivel a erro ou reutilizavel, ou quando Codex precisar transformar pratica recorrente em script, template ou asset dentro da skill dona da atividade.",
                        "path":  "C:\\codes\\skills\\generators\\skill_generator\\maintain-automations",
@@ -267,8 +330,17 @@
                                      ]
                    },
                    {
+                       "name":  "sincronizar-indice-repositorios",
+                       "description":  "Atualizar e validar indices de repositorios do root em C:\\codes por maquina/usuario. Use quando houver novo projeto/empresa, divergencia entre estado local e indice, ou necessidade de regenerar C:\\codes\\indice-repositorios-root-jf.* ou C:\\codes\\indice-repositorios-root-jz.*.",
+                       "path":  "C:\\codes\\skills\\sincronizar-indice-repositorios",
+                       "skill_file":  "C:\\codes\\skills\\sincronizar-indice-repositorios\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
                        "name":  "sync-repositories-index",
-                       "description":  "Atualizar e validar o indice de repositorios do root em C:\\codes. Use quando houver novo projeto/empresa, divergencia entre estado local e indice, ou necessidade de regenerar C:\\codes\\indice-repositorios-root.json e C:\\codes\\indice-repositorios-root.md.",
+                       "description":  "\"Atualizar e validar o indice de repositorios do root em C:\\\\codes. Use quando houver novo projeto/empresa, divergencia entre estado local e indice, ou necessidade de regenerar os arquivos por maquina (ex.: C:\\\\codes\\\\indice-repositorios-root-jz.json e .md).\"",
                        "path":  "C:\\codes\\skills\\synchronizers\\registry_sync\\sync-repositories-index",
                        "skill_file":  "C:\\codes\\skills\\synchronizers\\registry_sync\\sync-repositories-index\\SKILL.md",
                        "contextos":  [

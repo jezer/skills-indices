@@ -1,5 +1,5 @@
 ﻿{
-    "generated_at":  "2026-05-19T21:58:25-03:00",
+    "generated_at":  "2026-05-24T10:31:37-03:00",
     "regra":  "Aliases auxiliares para descoberta; nao substituem AGENTS.md.",
     "aliases":  {
                     "atividades":  [
@@ -44,6 +44,19 @@
                     "chamados":  [
                                      "maintain-tickets",
                                      "register-ticket-session"
-                                 ]
+                                 ],
+                    "parquet_codigo":  [
+                                           "code-parquet-builder"
+                                       ],
+                    "code_parquet":  [
+                                         "code-parquet-builder"
+                                     ],
+                    "semaforo":  [
+                                     "semaforo-cabecalho"
+                                 ],
+                    "semaforo_cabecalho":  [
+                                               "semaforo-cabecalho",
+                                               "code-parquet-builder"
+                                           ]
                 }
 }
