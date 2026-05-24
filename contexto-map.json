@@ -1,5 +1,5 @@
 ﻿{
-    "generated_at":  "2026-05-19T21:58:25-03:00",
+    "generated_at":  "2026-05-24T10:31:37-03:00",
     "regra":  "Mapa auxiliar de contexto para skills; consultar regras especificas antes de agir.",
     "contextos":  {
                       "file_system":  {
@@ -59,6 +59,19 @@
                                                  "maintain-git"
                                              ],
                                   "regra":  "C:\\codes\\tools\\git\\AGENTS.md"
-                              }
+                              },
+                      "parquet_codigo":  {
+                                             "skills":  [
+                                                            "code-parquet-builder"
+                                                        ],
+                                             "regra":  "C:\\codes\\skills\\generators\\code-parquet-builder\\SKILL.md"
+                                         },
+                      "semaforo":  {
+                                       "skills":  [
+                                                      "semaforo-cabecalho",
+                                                      "code-parquet-builder"
+                                                  ],
+                                       "regra":  "C:\\codes\\skills\\domains\\products\\semaforo-cabecalho\\SKILL.md"
+                                   }
                   }
 }
