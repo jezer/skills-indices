@@ -1,5 +1,5 @@
 ﻿{
-    "generated_at":  "2026-05-24T10:31:37-03:00",
+    "generated_at":  "2026-05-26T21:57:03-03:00",
     "source":  "C:\\codes\\skills",
     "regra":  "Auxiliar de descoberta; SKILL.md continua fonte principal.",
     "skills":  [
@@ -14,7 +14,7 @@
                    },
                    {
                        "name":  "maintain-planner",
-                       "description":  "Criar, revisar ou validar planos antes de implementacoes persistentes no workspace C:\\codes. Use quando Codex precisar organizar objetivo, escopo, fora de escopo, atividades, dependencias, riscos, skills recomendadas e criterios de aceite; ou quando uma implementacao ainda nao tiver plano claro conforme C:\\codes\\tools\\planejador.",
+                       "description":  "Gerencia o ciclo de vida de planos no workspace C:\\codes - cria pasta numerada NNNNNN-titulo-kebab, mantem indice por usuario (jz, jf) em C:\\codes\\plan\\indice-planos-{usuario}.json com apenas planos em-andamento, e move para concluido/ ao fim. Use quando criar, iniciar, concluir ou listar planos; revisar estrutura de plan/; ou atribuir o proximo numero de plano. A skill e a dona da numeracao global e do indice.",
                        "path":  "C:\\codes\\skills\\core\\planner\\maintain-planner",
                        "skill_file":  "C:\\codes\\skills\\core\\planner\\maintain-planner\\SKILL.md",
                        "contextos":  [
@@ -81,6 +81,15 @@
                                      ]
                    },
                    {
+                       "name":  "redshift-query-rules-comparator",
+                       "description":  "Comparar regras de colunas entre duas queries SQL de Redshift com foco no bloco SELECT (alias e expressao), usando o projeto C:\\codes\\tools\\csv_comparator para gerar diagnostico de diferencas e log auditavel. Use quando houver versoes old/v2/v3/v4 de view/query e for necessario identificar mudancas de regra por coluna antes de alterar dados ou publicar SQL.",
+                       "path":  "C:\\codes\\skills\\domains\\languages\\redshift-query-rules-comparator",
+                       "skill_file":  "C:\\codes\\skills\\domains\\languages\\redshift-query-rules-comparator\\SKILL.md",
+                       "contextos":  [
+                                         "skills"
+                                     ]
+                   },
+                   {
                        "name":  "redshift-sql-specialist",
                        "description":  "Investigar, diagnosticar e orientar correcoes SQL em Amazon Redshift com foco em views analiticas, regras percentuais, cast/conversao numerica, joins e validacao de resultados por amostra de negocio.",
                        "path":  "C:\\codes\\skills\\domains\\languages\\redshift-sql-specialist",
@@ -100,7 +109,7 @@
                    },
                    {
                        "name":  "presentation-designer",
-                       "description":  "Criar apresentacoes HTML tecnicas e executivas com foco visual, hierarquia de mensagem e fluxo por slide.",
+                       "description":  "Criar apresentacoes HTML tecnicas e executivas com foco visual, hierarquia de mensagem e fluxo por slide. Use para deck de slides estruturado. Distingue-se de `ui-infographic-generator` (visualizacao unica condensada) e `visual-storytelling` (narrativa sequencial sem deck).",
                        "path":  "C:\\codes\\skills\\domains\\products\\presentation-designer",
                        "skill_file":  "C:\\codes\\skills\\domains\\products\\presentation-designer\\SKILL.md",
                        "contextos":  [
@@ -109,7 +118,7 @@
                    },
                    {
                        "name":  "semaforo-cabecalho",
-                       "description":  "Gerencia o framework Semaforo v3 â€” atualizar codigo-fonte, regenerar parquet e versionar/deployar o cabecalho Delta no Databricks. Delega a geracao do parquet para `code-parquet-builder` via `config/semaforo.json`. Use quando alterar libs do framework, criar nova versao, resolver colisao de ordens ou orientar o fluxo de deploy local para Volumes, tabela Delta e loader.",
+                       "description":  "Gerencia o framework Semaforo v3 â€” atualizar codigo-fonte, regenerar parquet e versionar/deployar o cabecalho Delta no Databricks. A saida oficial fica unicamente em `C:\\codes\\pv\\semaforo\\cabecalho\\scripts\\output\\`; propagacao para espelhos (cnu, etc.) e sempre manual. Delega a geracao do parquet para `code-parquet-builder` via `config/semaforo.json`. Use quando alterar libs do framework, criar nova versao, resolver colisao de ordens ou orientar o fluxo de deploy local para Volumes, tabela Delta e loader.",
                        "path":  "C:\\codes\\skills\\domains\\products\\semaforo-cabecalho",
                        "skill_file":  "C:\\codes\\skills\\domains\\products\\semaforo-cabecalho\\SKILL.md",
                        "contextos":  [
@@ -136,7 +145,7 @@
                    },
                    {
                        "name":  "ui-infographic-generator",
-                       "description":  "Criar infograficos tecnicos e executivos para resumo de processos, KPIs, comparativos e timelines.",
+                       "description":  "Criar infograficos tecnicos e executivos para resumo de processos, KPIs, comparativos e timelines. Use para visualizacao unica condensada (1 imagem). Distingue-se de `presentation-designer` (deck multi-slide) e `visual-storytelling` (narrativa sequencial).",
                        "path":  "C:\\codes\\skills\\domains\\products\\ui-infographic-generator",
                        "skill_file":  "C:\\codes\\skills\\domains\\products\\ui-infographic-generator\\SKILL.md",
                        "contextos":  [
@@ -145,7 +154,7 @@
                    },
                    {
                        "name":  "visual-storytelling",
-                       "description":  "Transformar conteudo tecnico em narrativa visual com fluxo cognitivo claro para publico tecnico e executivo.",
+                       "description":  "Transformar conteudo tecnico em narrativa visual com fluxo cognitivo claro para publico tecnico e executivo. Use para narrativa sequencial (sequencia de cenas). Distingue-se de `presentation-designer` (deck de slides) e `ui-infographic-generator` (visualizacao unica).",
                        "path":  "C:\\codes\\skills\\domains\\products\\visual-storytelling",
                        "skill_file":  "C:\\codes\\skills\\domains\\products\\visual-storytelling\\SKILL.md",
                        "contextos":  [
@@ -190,7 +199,7 @@
                    },
                    {
                        "name":  "syg-sonarcloud-specialist",
-                       "description":  "Especialista em Quality Gate SonarCloud para projetos SYG. Usar quando houver falhas de cobertura, code smells, bugs, hotspots ou recomendacoes de padrao (ex.: SparkSession com master e appName), priorizando ajustes sem regressao.",
+                       "description":  "\"Especialista em Quality Gate SonarCloud para projetos SYG. Usar quando houver falhas de cobertura, code smells, bugs, hotspots ou recomendacoes de padrao (ex.: SparkSession com master e appName), priorizando ajustes sem regressao.\"",
                        "path":  "C:\\codes\\skills\\domains\\services\\syg-sonarcloud-specialist",
                        "skill_file":  "C:\\codes\\skills\\domains\\services\\syg-sonarcloud-specialist\\SKILL.md",
                        "contextos":  [
@@ -245,7 +254,7 @@
                    },
                    {
                        "name":  "connect-github-gitlab",
-                       "description":  "Recuperar conectividade Git com GitHub/GitLab no Windows usando scripts parametrizaveis. Use quando houver erro de autenticacao SSH/HTTPS, falha de ssh-agent, chave ausente, ou bloqueio de push/pull por conexao.",
+                       "description":  "Recuperar conectividade Git com GitHub/GitLab no Windows usando scripts parametrizaveis. Use quando houver erro de autenticacao SSH/HTTPS, falha de ssh-agent, chave ausente, ou bloqueio de push/pull por conexao. Foco em diagnostico/recuperacao em UMA maquina; para setup inicial em segunda maquina reaproveitando chave existente, usar `connect-secondary-machine-git`.",
                        "path":  "C:\\codes\\skills\\domains\\tools\\connect-github-gitlab",
                        "skill_file":  "C:\\codes\\skills\\domains\\tools\\connect-github-gitlab\\SKILL.md",
                        "contextos":  [
@@ -254,7 +263,7 @@
                    },
                    {
                        "name":  "connect-secondary-machine-git",
-                       "description":  "Configurar conectividade Git em segunda maquina Windows reaproveitando chave SSH padrao de forma segura e parametrizavel. Use quando a segunda maquina nao consegue autenticar no GitHub/GitLab.",
+                       "description":  "Configurar conectividade Git em segunda maquina Windows reaproveitando chave SSH padrao de forma segura e parametrizavel. Use quando a segunda maquina nao consegue autenticar no GitHub/GitLab. Foco em setup inicial cross-machine (importar/replicar chave); para diagnostico/recuperacao na propria maquina, usar `connect-github-gitlab`.",
                        "path":  "C:\\codes\\skills\\domains\\tools\\connect-secondary-machine-git",
                        "skill_file":  "C:\\codes\\skills\\domains\\tools\\connect-secondary-machine-git\\SKILL.md",
                        "contextos":  [
@@ -327,15 +336,6 @@
                        "contextos":  [
                                          "skills",
                                          "automacoes"
-                                     ]
-                   },
-                   {
-                       "name":  "sincronizar-indice-repositorios",
-                       "description":  "Atualizar e validar indices de repositorios do root em C:\\codes por maquina/usuario. Use quando houver novo projeto/empresa, divergencia entre estado local e indice, ou necessidade de regenerar C:\\codes\\indice-repositorios-root-jf.* ou C:\\codes\\indice-repositorios-root-jz.*.",
-                       "path":  "C:\\codes\\skills\\sincronizar-indice-repositorios",
-                       "skill_file":  "C:\\codes\\skills\\sincronizar-indice-repositorios\\SKILL.md",
-                       "contextos":  [
-                                         "skills"
                                      ]
                    },
                    {
