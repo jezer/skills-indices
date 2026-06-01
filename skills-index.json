@@ -1,5 +1,5 @@
 ﻿{
-    "generated_at":  "2026-05-26T21:57:03-03:00",
+    "generated_at":  "2026-05-31T19:12:00-03:00",
     "source":  "C:\\codes\\skills",
     "regra":  "Auxiliar de descoberta; SKILL.md continua fonte principal.",
     "skills":  [
@@ -345,6 +345,61 @@
                        "skill_file":  "C:\\codes\\skills\\synchronizers\\registry_sync\\sync-repositories-index\\SKILL.md",
                        "contextos":  [
                                          "skills"
+                                     ]
+                   },
+                   {
+                       "name":  "fastapi-specialist",
+                       "description":  "Design, implement and test FastAPI applications in the workspace. Use when the activity requires creating FastAPI routers, middleware, Jinja2 templates, dependency injection, OpenAPI configuration, or testing with TestClient and pytest-asyncio.",
+                       "path":  "C:\\codes\\skills\\domains\\languages\\fastapi-specialist",
+                       "skill_file":  "C:\\codes\\skills\\domains\\languages\\fastapi-specialist\\SKILL.md",
+                       "contextos":  [
+                                         "desenvolvimento",
+                                         "tools",
+                                         "all_IA"
+                                     ]
+                   },
+                   {
+                       "name":  "alembic-db-specialist",
+                       "description":  "Define SQLAlchemy 2.0 models, manage Alembic migrations and write idempotent seed scripts. Use when the activity requires creating or updating ORM models, generating or applying migrations, or populating initial data for any module in the workspace.",
+                       "path":  "C:\\codes\\skills\\domains\\languages\\alembic-db-specialist",
+                       "skill_file":  "C:\\codes\\skills\\domains\\languages\\alembic-db-specialist\\SKILL.md",
+                       "contextos":  [
+                                         "desenvolvimento",
+                                         "tools"
+                                     ]
+                   },
+                   {
+                       "name":  "ia-gateway-specialist",
+                       "description":  "Operate and maintain the ia-gateway module in C:\\codes\\tools\\ia-gateway. Use when the activity requires configuring IA providers, defining routing rules by subject/skill/complexity, managing usage limits, tracking costs, implementing fallback logic, or analyzing the IA routing index for workspace modules.",
+                       "path":  "C:\\codes\\skills\\domains\\tools\\ia-gateway-specialist",
+                       "skill_file":  "C:\\codes\\skills\\domains\\tools\\ia-gateway-specialist\\SKILL.md",
+                       "contextos":  [
+                                         "tools",
+                                         "all_IA",
+                                         "ia-gateway"
+                                     ]
+                   },
+                   {
+                       "name":  "automated-test-builder",
+                       "description":  "Build automated test suites for workspace modules following AAA (Arrange-Act-Assert) and BDD patterns with pytest and Playwright. Use when the activity requires creating test scenarios, test cases, shared reusable functions, parametrized tests, E2E smoke tests, or organizing suites in C:\\codes\\tools\\test_aut.",
+                       "path":  "C:\\codes\\skills\\domains\\disciplines\\automated-test-builder",
+                       "skill_file":  "C:\\codes\\skills\\domains\\disciplines\\automated-test-builder\\SKILL.md",
+                       "contextos":  [
+                                         "testes",
+                                         "tools",
+                                         "qualidade"
+                                     ]
+                   },
+                   {
+                       "name":  "sci-content-flow",
+                       "description":  "Manage the SCI artifact lifecycle in the workspace: draft creation, IA-based topic classification with confidence percentage, plan-before-execute confirmation panel, contextual publishing, 12h auto-publish job, context correction alert, comment emotion classification, and quality score calculation. Use when implementing or operating any artifact flow in C:\\codes\\tools\\artifact-engine or C:\\codes\\tools\\all_IA.",
+                       "path":  "C:\\codes\\skills\\domains\\tools\\sci-content-flow",
+                       "skill_file":  "C:\\codes\\skills\\domains\\tools\\sci-content-flow\\SKILL.md",
+                       "contextos":  [
+                                         "tools",
+                                         "all_IA",
+                                         "artifact-engine",
+                                         "sci"
                                      ]
                    }
                ]
